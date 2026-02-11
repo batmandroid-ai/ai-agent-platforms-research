@@ -45,6 +45,47 @@
 - Фокус: end‑to‑end платформа (UI + backend) для агентів.
 - Джерело: https://github.com/Significant-Gravitas/AutoGPT
 
+## Можливості / функції (узагальнено)
+- Оркестрація агентів: handoffs/делегація, ролі, координація, графи/flows.
+- Statefulness: сесії/пам’ять, durable execution, відновлення після збоїв.
+- Human‑in‑the‑loop: затвердження кроків, ручні interrupt/override.
+- Guardrails: валідація input/output, policy‑checks.
+- Observability: tracing/логування, метрики, дебаг execution‑графів.
+- Інтеграції: tools, MCP/конектори, plugins, external services.
+
+## Приклади застосування
+- Support‑боти 24/7 з escalation до людини.
+- RPA/операційна автоматизація (збір даних, звіти, рутини).
+- Dev‑assistant у команді (code review, генерація тестів, triage задач).
+- Аналітика/дослідження (multi‑agent research, структуровані звіти).
+- Бізнес‑процеси (approval flows, routing, оркестрація департаментів).
+
+## Платформні можливості (факти з джерел)
+
+### OpenAI Agents SDK
+- Вбудований agent loop, handoffs, guardrails, sessions, tracing.
+- MCP server tool calling, function tools з валідацією.
+- Realtime/voice‑agents, HITL.
+- Джерело: https://openai.github.io/openai-agents-python/
+
+### CrewAI
+- Agents + tools + memory + knowledge + structured outputs.
+- Flows з керуванням станом та long‑running workflows.
+- Guardrails + observability (enterprise‑орієнтовано).
+- Джерело: https://docs.crewai.com
+
+### AutoGen
+- AgentChat (multi‑agent conversational apps).
+- AutoGen Studio (no‑code prototyping).
+- Core: event‑driven framework для scalable multi‑agent систем.
+- Extensions, MCP інтеграції, runtime для distributed agents.
+- Джерело: https://microsoft.github.io/autogen/stable/
+
+### AutoGPT Platform (self‑host)
+- End‑to‑end платформа (UI + backend) для continuous‑agents.
+- Self‑host сценарій з Docker/Node stack.
+- Джерело: https://agpt.co/docs/platform/getting-started/getting-started
+
 ## Рекомендації для подальшого ресерчу
 - Порівняти production‑фічі: guardrails, tracing/observability, human‑in‑the‑loop, state persistence.
 - Оцінити ecosystem: інтеграції, плагіни, MCP/конектори, деплой‑моделі.
